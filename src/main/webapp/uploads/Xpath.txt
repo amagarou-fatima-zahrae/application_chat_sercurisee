@@ -1,0 +1,21 @@
+1 => //film/titre
+2 => //film[role/acteur="Michel Blanc"]/titre
+3 => //film/@type
+4 => //role[acteur="Michel Blanc"]
+5 => //film/role[1]/acteur
+6 => //producteur[nom="Yves Rousset-Rouard"]/following-sibling::producteur[1]/nom
+7 => //film[realisateur="Patrice Leconte"]/role[acteur="Michel Blanc"]/preceding-sibling::role/acteur
+8 => //film[role/acteur="Michel Blanc" and role/acteur="Thierry Lhermite"]/realisateur
+9 => //film[count(role/acteur)>5]/titre
+10 => //film[realisateur/text()=role/acteur/text()]/realisateur
+11 => //producteur[film/@ref=//film[@type="comédie"]/@id]
+12 => //film[not(prix)]/titre
+13 =>//film/role[nom[contains(text(),"Morin")]]/acteur
+14 => //film[@type="comédie" and annee<1990]/role/acteur
+15 => //film[prix]/realisateur
+16 => //film[role/acteur="Michel Blanc" and  role/acteur!="Thierry Lhermite"]/titre
+17 => //film[titre=role/nom]/role[1]/acteur
+18 => //film[@id=//producteur[nom='Daniel Toscan du Plantier']/film/@ref]/titre
+ 
+
+https://chat.openai.com/c/17b990ad-a959-4456-8884-04e84fc59d2a
